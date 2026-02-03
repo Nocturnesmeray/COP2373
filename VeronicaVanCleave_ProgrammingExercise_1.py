@@ -29,7 +29,7 @@ def ticket_sales(TOTAL_TICKET):
 
         desired = int(input(
             f'There are {TOTAL_TICKET} tickets available. '
-            f'How many tickets would you like to buy up to 4? '))
+            f'How many are being sold with a max of 4? '))
 
 
         if 1<= desired <= 4:
