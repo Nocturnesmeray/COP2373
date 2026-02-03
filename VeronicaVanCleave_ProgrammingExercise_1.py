@@ -29,7 +29,7 @@ def ticket_sales(TOTAL_TICKET):
 
         desired = int(input(
             f'There are {TOTAL_TICKET} tickets available. '
-            f'How many are being sold with a max of 4? '))
+            f'How many tickets would you like to buy up to 4? '))
 
 
         if 1<= desired <= 4:
@@ -69,22 +69,22 @@ def amount_sold(ticket_sales):
     """
 
     TOTAL_TICKET = 10
-    ticket_sold = 0
-    buyers = 0
+    ticket_bought = 0
+    customers = 0
 
     # Loops until all tickets are sold
     while TOTAL_TICKET > 0:
 
         desired = ticket_sales(TOTAL_TICKET)
 
-        ticket_sold += desired
+        ticket_bought += desired
 
         TOTAL_TICKET -= desired
 
-        buyers += 1
+        customers += 1
         print(f'There are {TOTAL_TICKET} remaining.')
 
-    print(f'All the tickets were sold with {buyers} buyers.')
+    print(f'All the tickets were sold with {customers} customers.')
 
 if __name__ == "__main__":
     amount_sold(ticket_sales)
